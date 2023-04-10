@@ -1,4 +1,4 @@
-# Autoremover-discord
+# Autoremove-discord
 
 This repository contains a Python script that uses the PyAutoGUI library to automatically disconnect users from discord. The script searches for a specific user image and disconnects it using a pre-defined disconnect button image.
 
