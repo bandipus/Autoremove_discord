@@ -44,7 +44,7 @@ def delete_channels():
             remove_channel = pyautogui.center(remove_channel)
             x_coordinate, y_coordinate = remove_channel
             pyautogui.click(x=x_coordinate,y=y_coordinate)
-            time.sleep(0.15)
+            time.sleep(0.15) # needed for animations
             remove_channel = pyautogui.locateOnScreen(REMOVE_CHANNEL_2, grayscale=True, confidence=.8)
             remove_channel = pyautogui.center(remove_channel)
             x_coordinate, y_coordinate = remove_channel
