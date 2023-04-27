@@ -44,7 +44,7 @@ def delete_channels():
             remove_channel = pyautogui.center(remove_channel)
             x_coordinate, y_coordinate = remove_channel
             pyautogui.click(x=x_coordinate,y=y_coordinate)
-            time.sleep(0.15) # needed for animations
+            time.sleep(0.15)
             remove_channel = pyautogui.locateOnScreen(REMOVE_CHANNEL_2, grayscale=True, confidence=.8)
             remove_channel = pyautogui.center(remove_channel)
             x_coordinate, y_coordinate = remove_channel
@@ -54,14 +54,12 @@ def delete_channels():
         except (IndexError, TypeError) as exception:
             print("Missing channels, exception: ", exception)
 
-def main():
+if __name__ == '__main__':
     print("Which option do you want to execute?\n1 - Delete a specific user\n2 - Delete all channels on the server\n")
+    
     option = int(input())
 
     if option == 1:
         delete_user()
     else:
         delete_channels()
-
-if __name__ == '__main__':
-    main()
