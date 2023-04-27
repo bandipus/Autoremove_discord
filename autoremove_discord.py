@@ -21,10 +21,9 @@ def delete_user(user):
             user_to_delete = pyautogui.center(user_to_delete)
             x_coordinate, y_coordinate = user_to_delete
             pyautogui.click(button='right',x=x_coordinate,y=y_coordinate)
-            pyautogui.click(DISCONNECT_IMAGE)
-            disconnect_user = pyautogui.locateOnScreen(REMOVE_CHANNEL, grayscale=True, confidence=.8)
-            disconnect_user = pyautogui.center(disconnect_user)
-            x_coordinate, y_coordinate = disconnect_user
+            user_to_delete = pyautogui.locateOnScreen(DISCONNECT_IMAGE, grayscale=True, confidence=.8)
+            user_to_delete = pyautogui.center(user_to_delete)
+            x_coordinate, y_coordinate = user_to_delete
             pyautogui.click(x=x_coordinate,y=y_coordinate)
         except (IndexError, TypeError) as exception:
             print("Missing user, exception: ", exception)
@@ -42,10 +41,9 @@ def crazy_mode(max_users):
             user_to_delete = pyautogui.center(user_to_delete)
             x_coordinate, y_coordinate = user_to_delete
             pyautogui.click(button='right',x=x_coordinate,y=y_coordinate)
-            pyautogui.click(DISCONNECT_IMAGE)
-            disconnect_user = pyautogui.locateOnScreen(REMOVE_CHANNEL, grayscale=True, confidence=.8)
-            disconnect_user = pyautogui.center(disconnect_user)
-            x_coordinate, y_coordinate = disconnect_user
+            user_to_delete = pyautogui.locateOnScreen(DISCONNECT_IMAGE, grayscale=True, confidence=.8)
+            user_to_delete = pyautogui.center(user_to_delete)
+            x_coordinate, y_coordinate = user_to_delete
             pyautogui.click(x=x_coordinate,y=y_coordinate)
         except (IndexError, TypeError) as exception:
             print("Missing users, exception: ", exception)
