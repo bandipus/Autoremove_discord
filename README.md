@@ -24,7 +24,7 @@ You can adjust the confidence level of the image recognition algorithm. The curr
 
 To run the script, navigate to the directory where you have saved the script and run the following command:
 
-`python autoremove-discord.py`
+`python autoremove_discord.py`
 
 Choose which option you want to execute (Delete a specific user or Delete all channels on the server) by typing 1 or 2 and pressing enter.
 In the user delete mode, the script will keep running until you press the q key.
