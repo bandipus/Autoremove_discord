@@ -154,7 +154,8 @@ def clear_terminal():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 if __name__ == '__main__':
-
+    clear_terminal()
+    time.sleep(0.1)
     print_title()
     option = int(input())
 
