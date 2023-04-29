@@ -5,9 +5,9 @@ This repository contains a Python script that uses the PyAutoGUI library to auto
 ### Dependencies
 This script requires the following dependencies to be installed:
 
-PyAutoGUI
-keyboard
-colorama
+- PyAutoGUI
+- keyboard
+- colorama
 
 You can install these dependencies using pip. Run the following command in your terminal:
 
