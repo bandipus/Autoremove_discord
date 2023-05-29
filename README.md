@@ -11,7 +11,7 @@ This script requires the following dependencies to be installed:
 
 You can install these dependencies using pip. Run the following command in your terminal:
 
-`pip install pyautogui keyboard`
+`pip install pyautogui keyboard colorama`
 
 ### Usage
 Before running the bot, make sure to configure the following images to match the ones you see on your Discord app:
